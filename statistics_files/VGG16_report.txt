@@ -1,0 +1,29 @@
+
+VGG16
+
+=====>>>[ input_1             : 150528     Neurons ]
+=====>>>[ Conv2D              : 3211264    Neurons  179.830000      MFLOPs  input:(224, 224, 3)         output:(224, 224, 64)        kernel:(3, 3)    ]
+=====>>>[ Conv2D              : 3211264    Neurons  3705.800000     MFLOPs  input:(224, 224, 64)        output:(224, 224, 64)        kernel:(3, 3)    ]
+=====>>>[ block1_pool         : 802816     Neurons  2.410000        MFLOPs  input:(224, 224, 64)        output:(112, 112, 64)        kernel:(2, 2)    ]
+=====>>>[ Conv2D              : 1605632    Neurons  1852.900000     MFLOPs  input:(112, 112, 64)        output:(112, 112, 128)       kernel:(3, 3)    ]
+=====>>>[ Conv2D              : 1605632    Neurons  3702.590000     MFLOPs  input:(112, 112, 128)       output:(112, 112, 128)       kernel:(3, 3)    ]
+=====>>>[ block2_pool         : 401408     Neurons  1.200000        MFLOPs  input:(112, 112, 128)       output:(56, 56, 128)         kernel:(2, 2)    ]
+=====>>>[ Conv2D              : 802816     Neurons  1851.290000     MFLOPs  input:(56, 56, 128)         output:(56, 56, 256)         kernel:(3, 3)    ]
+=====>>>[ Conv2D              : 802816     Neurons  3700.980000     MFLOPs  input:(56, 56, 256)         output:(56, 56, 256)         kernel:(3, 3)    ]
+=====>>>[ Conv2D              : 802816     Neurons  3700.980000     MFLOPs  input:(56, 56, 256)         output:(56, 56, 256)         kernel:(3, 3)    ]
+=====>>>[ block3_pool         : 200704     Neurons  0.600000        MFLOPs  input:(56, 56, 256)         output:(28, 28, 256)         kernel:(2, 2)    ]
+=====>>>[ Conv2D              : 401408     Neurons  1850.490000     MFLOPs  input:(28, 28, 256)         output:(28, 28, 512)         kernel:(3, 3)    ]
+=====>>>[ Conv2D              : 401408     Neurons  3700.180000     MFLOPs  input:(28, 28, 512)         output:(28, 28, 512)         kernel:(3, 3)    ]
+=====>>>[ Conv2D              : 401408     Neurons  3700.180000     MFLOPs  input:(28, 28, 512)         output:(28, 28, 512)         kernel:(3, 3)    ]
+=====>>>[ block4_pool         : 100352     Neurons  0.300000        MFLOPs  input:(28, 28, 512)         output:(14, 14, 512)         kernel:(2, 2)    ]
+=====>>>[ Conv2D              : 100352     Neurons  925.040000      MFLOPs  input:(14, 14, 512)         output:(14, 14, 512)         kernel:(3, 3)    ]
+=====>>>[ Conv2D              : 100352     Neurons  925.040000      MFLOPs  input:(14, 14, 512)         output:(14, 14, 512)         kernel:(3, 3)    ]
+=====>>>[ Conv2D              : 100352     Neurons  925.040000      MFLOPs  input:(14, 14, 512)         output:(14, 14, 512)         kernel:(3, 3)    ]
+=====>>>[ block5_pool         : 25088      Neurons  0.080000        MFLOPs  input:(14, 14, 512)         output:(7, 7, 512)           kernel:(2, 2)    ]
+=====>>>[ fc1                 : 25088      Neurons  102.760000      MFLOPs]
+=====>>>[ fc2                 : 4096       Neurons  16.780000       MFLOPs]
+=====>>>[ predictions         : 4096       Neurons  4.100000        MFLOPs]
+
+Total number of Neurons: 15.26 M
+Total number of operations: 30.85 GFLOPs
+Total number of Parameters: 138.36 M

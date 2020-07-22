@@ -1,0 +1,21 @@
+
+example_model
+
+=====>>>[ input_1             : 1024       Neurons ]
+=====>>>[ Conv2D              : 16384      Neurons  0.290000        MFLOPs  input:(32, 32, 1)           output:(32, 32, 16)          kernel:(3, 3)    ]
+=====>>>[ average_pooling2d   : 4096       Neurons  0.020000        MFLOPs  input:(32, 32, 16)          output:(16, 16, 16)          kernel:(2, 2)    ]
+=====>>>[ Conv2D              : 8192       Neurons  2.360000        MFLOPs  input:(16, 16, 16)          output:(16, 16, 32)          kernel:(3, 3)    ]
+=====>>>[ average_pooling2d_1 : 2048       Neurons  0.010000        MFLOPs  input:(16, 16, 32)          output:(8, 8, 32)            kernel:(2, 2)    ]
+=====>>>[ Conv2D              : 4096       Neurons  2.360000        MFLOPs  input:(8, 8, 32)            output:(8, 8, 64)            kernel:(3, 3)    ]
+=====>>>[ average_pooling2d_2 : 1024       Neurons  0.000000        MFLOPs  input:(8, 8, 64)            output:(4, 4, 64)            kernel:(2, 2)    ]
+=====>>>[ Conv2D              : 1024       Neurons  1.180000        MFLOPs  input:(4, 4, 64)            output:(4, 4, 64)            kernel:(3, 3)    ]
+=====>>>[ Conv2D              : 1024       Neurons  1.180000        MFLOPs  input:(4, 4, 64)            output:(4, 4, 64)            kernel:(3, 3)    ]
+=====>>>[ average_pooling2d_3 : 256        Neurons  0.000000        MFLOPs  input:(4, 4, 64)            output:(2, 2, 64)            kernel:(2, 2)    ]
+=====>>>[ Conv2D              : 40         Neurons  0.010000        MFLOPs  input:(2, 2, 64)            output:(2, 2, 10)            kernel:(1, 1)    ]
+=====>>>[ global_average_pooling2d: 10         Neurons  0.000000        MFLOPs  input:(2, 2, 10)            output:(10,)                 kernel:(2, 2)    ]
+
+Total number of Neurons: 39.220000  K
+
+Total number of operations: 7.410000   MFLOPs
+
+Total number of Parameters: 97.560000  K
